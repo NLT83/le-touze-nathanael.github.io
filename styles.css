@@ -1,0 +1,75 @@
+
+/* mettre une police  */
+
+/* rettrait des marges auto du nav  */
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/* Header  */
+H1 {
+    text-align: center;
+
+}
+.introduction {
+    text-align: center;
+}
+
+
+/* faire un beau bouton  */
+.contactez{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+    color: #ebebeb49; 
+    font-size: 23px; 
+    line-height: 23px; 
+    padding: 10px; 
+    border-radius: 11px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-image: linear-gradient(to right, rgba(125, 28, 164, 0.322) 0%, rgba(111, 20, 129, 0.418) 50%, rgba(195, 138, 209, 0.377) 100%); 
+    rgb(0 0 0 / 36%) 0px 0px 3px 1px;
+    border: 2px solid rgb(28, 110, 164); 
+    display: inline-block;    
+}
+
+.contactez:hover {
+    background: #5b1ca4;
+transition: 200ms; }
+    .contactez:active {
+    background: #03243a; }
+
+    /* fin du button contactez moi  */
+    
+
+/* integrer lien de retour à l'accueil  */
+.logoaccueil {
+    position: absolute;
+    width: 20px;
+    top: -14px;   
+}
+
+.imageavantbody {
+
+position: relative;
+left: 134px;
+}
+
+/* MAIN  */
+
+.backgroundviolet {
+    height: 600px;
+    width: auto;
+    background: #EBEBEB;
+background: -moz-linear-gradient(45deg, #EBEBEB 0%, #2F26A4 100%, #C59237 100%);
+background: -webkit-linear-gradient(45deg, #EBEBEB 0%, #2F26A4 100%, #C59237 100%);
+background: linear-gradient(45deg, #EBEBEB 0%, #2F26A4 100%, #C59237 100%);
+}
+
