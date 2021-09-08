@@ -145,11 +145,99 @@ z-index: 2;
     width: 50%;
     position: absolute;
     left: 340px;
-    border-bottom: rgb(28, 110, 164) 1px solid;
 }
 
 
+/* voir pour agencer les 3 colonne en flexbox  */
+ul {
+    list-style: none;
+    width: 70%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: 240px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
 
+}
 
+.travauxrécents {
+    height: 200px;
+    width: 100%;
+    background: #EBEBEB;
+background: -moz-linear-gradient(45deg, #EBEBEB 0%, #2F26A4 100%, #C59237 100%);
+background: -webkit-linear-gradient(45deg, #EBEBEB 0%, #2F26A4 100%, #C59237 100%);
+background: linear-gradient(45deg, #EBEBEB 0%, #2F26A4 100%, #C59237 100%);
+    text-align: center;
+    margin-left:auto;
+    padding-top: 90px;
+}
 
+/* test de présentation de projet  */
 
+ /* .contenair{
+     margin-top: 5px;
+     margin-left: 150px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    height: 500px;
+    width: 70%;
+    border: 2px solid rgba(59, 40, 145, 0.589);
+	
+} */
+
+/* présentation de projet diaporama de you tube  */
+
+.presentationprojets{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#caroussel {
+    height: 500px;
+    width: 640px;
+    overflow: hidden;
+    border: 3px solid #333;
+    border-radius: 20%;
+    z-index: -2;
+    
+}
+
+.images {
+
+    display:flex ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: diaporama;
+
+}
+
+/* defiition des règles de l'animation  */
+
+@keyframes diaporama {
+
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-640px);
+    }
+    50%{
+        transform: translateX(-1280px);
+    }
+    75%{
+        transform: translateX(-1920px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
