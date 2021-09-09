@@ -2,6 +2,9 @@
 /* mettre une police  */
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
+
+html{scroll-behavior: smooth;}
+
 /* rettrait des marges auto du nav  */
 * {
     margin: 0;
@@ -38,7 +41,7 @@ H1 {
     height: 50px;
     width: 100%;
     top: 0px; left: 0px;
-    padding-top: 50px;   
+    padding-top: 50px;  
 }
 
 
@@ -48,7 +51,7 @@ H1 {
     position: fixed;
     top: 30px;
     right: 50px;
-    color: #ebebeb49; 
+    color: #ebebeb; 
     font-size: 23px; 
     line-height: 23px; 
     padding: 10px; 
@@ -65,6 +68,7 @@ H1 {
     box-shadow: 0 0 2px 0px black;
     display: inline-block; 
     text-transform: uppercase;
+    
 }
 
 /* animation css du bouton au survol  */
@@ -73,6 +77,7 @@ H1 {
     color: #fff;
     background-color: rgba(81, 87, 172, 0.5);
     transition: all 1s ease-out;
+    
   }
   
   .contactez:hover,
@@ -98,6 +103,7 @@ position: fixed;
     position: fixed;
     top: -14px;  
     z-index: 4; 
+    
 }
 
 /* animation d'apparition du header  */
@@ -218,6 +224,7 @@ background: linear-gradient(45deg, #EBEBEB 0%, #2F26A4 100%, #C59237 100%);
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-name: diaporama;
+    
 
 }
 
@@ -240,4 +247,31 @@ background: linear-gradient(45deg, #EBEBEB 0%, #2F26A4 100%, #C59237 100%);
     100%{
         transform: translateX(0px);
     }
+}
+
+/* AF formulaire (avec arrière plan interactif)  */
+
+.formulaire { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgba(0,117,255,0.9);
+background: linear-gradient(88deg,rgba(0,117,255,0.9) 0%, rgba(0,163,255,0) 20%);
+background: -webkit-linear-gradient(88deg,rgba(0,117,255,0.9) 0%, rgba(0,163,255,0) 20%);
+background: -moz-linear-gradient(88deg,rgba(0,117,255,0.9) 0%, rgba(0,163,255,0) 20%);
+}
+
+form{
+   
+    width: 300px;
+    padding: 60px;
+    box-sizing: border-box;
+    border-radius:10px;
+    
+}
+
+input{
+
+display: block;
 }
